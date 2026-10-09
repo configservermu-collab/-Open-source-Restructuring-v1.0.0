@@ -1,0 +1,15 @@
+# Estado generado por el CMS
+includes/cache/*.cache
+includes/cache/*/
+!includes/cache/.gitkeep
+api/*.log
+**/cache/*
+!**/cache/.gitkeep
+**/logs/*
+!**/logs/.gitkeep
+error_log
+*.log
+api/mercadopago/vendor/
+
+# Configuración local y secretos
+includes/config/webengine.json
