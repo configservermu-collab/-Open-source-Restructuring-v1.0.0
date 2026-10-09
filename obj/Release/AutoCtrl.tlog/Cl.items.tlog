@@ -1,8 +1,0 @@
-D:\Plugin\AutoCtrl\AutoCtrl.cpp;D:\Plugin\AutoCtrl\obj\Release\AutoCtrl.obj
-D:\Plugin\AutoCtrl\License\CryptoUtils.cpp;D:\Plugin\AutoCtrl\obj\Release\CryptoUtils.obj
-D:\Plugin\AutoCtrl\License\Ed25519Verifier.cpp;D:\Plugin\AutoCtrl\obj\Release\Ed25519Verifier.obj
-D:\Plugin\AutoCtrl\License\JsonParser.cpp;D:\Plugin\AutoCtrl\obj\Release\JsonParser.obj
-D:\Plugin\AutoCtrl\License\LicenseClient.cpp;D:\Plugin\AutoCtrl\obj\Release\LicenseClient.obj
-D:\Plugin\AutoCtrl\License\LicenseManager.cpp;D:\Plugin\AutoCtrl\obj\Release\LicenseManager.obj
-D:\Plugin\AutoCtrl\License\MainHasher.cpp;D:\Plugin\AutoCtrl\obj\Release\MainHasher.obj
-D:\Plugin\AutoCtrl\MainDllVerifier.cpp;D:\Plugin\AutoCtrl\obj\Release\MainDllVerifier.obj
