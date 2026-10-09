@@ -1,0 +1,992 @@
+/*!
+    
+ =========================================================
+ * WebEngine CMS
+ * https://webenginecms.org/
+ =========================================================
+ 
+ * Author Lautaro Angelico (https://lautaroangelico.com/)
+ * Copyright (c) 2013-2026 Lautaro Angelico, All Rights Reserved
+ 
+ * Licensed under the MIT license
+ * https://opensource.org/licenses/MIT
+ 
+ =========================================================
+ 
+*/
+:root {
+	--webenginebg1: #000000; /* background color */
+	--webenginebg2: #fefefe; /* container background color */
+	--webenginebg3: #efefef; /* footer background color */
+	
+	--webenginecolor1: #990000; /* primary highlight color */
+	--webenginecolor2: #000000; /* default text color */
+	
+	--webenginecolor3: #777777; /* links */
+	--webenginecolor4: #000000; /* links hover */
+	
+	--webenginecolor5: #333333; /* panel header */
+	--webenginecolor6: #cccccc; /* panel header text */
+	--webenginecolor7: #990000; /* panel header border */
+	
+	--webenginecolor8: #444444; /* button background */
+	--webenginecolor9: #cccccc; /* button text */
+	--webenginecolor10: #777777; /* button border */
+	
+	--webenginecolor11: #990000; /* button background hover */
+	--webenginecolor12: #ffffff; /* button text hover */
+	--webenginecolor13: #dcbdbd; /* button border hover */
+	
+	--webenginecolor14: #666666; /* footer text color, alt text color, drop shadows */
+	--webenginecolor63: #cacaca; /* footer hr color */
+	
+	--webenginecolor15: #fafafa; /* input background */
+	--webenginecolor16: #e3e3e3; /* input border, borders, shadows */
+	--webenginecolor17: #666666; /* input text color */
+	--webenginecolor18: #cccccc; /* input border hover */
+	
+	--webenginecolor19: #cccccc; /* navbar link */
+	--webenginecolor20: #ffffff; /* navbar link hover */
+	
+	--webenginecolor21: #e7e7e7; /* news footer border */
+	--webenginecolor22: #ffffff; /* news background */
+	--webenginecolor23: #777777; /* news footer text color */
+	
+	--webenginecolor24: #f1f1f1; /* rankings menu bg */
+	--webenginecolor25: #cccccc; /* rankings menu link color */
+	--webenginecolor26: #333333; /* rankings menu link color active, border color */
+	
+	--webenginecolor27: #f1f1f1; /* table background, panel background */
+	--webenginecolor28: #fafafa; /* alt table background */
+	
+	--webenginecolor29: #fef2da; /* paypal gateway bg */
+	--webenginecolor30: #f79433; /* paypal gateway border */
+	--webenginecolor31: #fff9ec; /* paypal gateway alt bg */
+	--webenginecolor32: #f79433; /* paypal gateway input text and border */
+	
+	--webenginecolor33: #444444; /* usercp sidebar link color */
+	
+	--webenginecolor34: #101010; /* global top bar background */
+	--webenginecolor35: #777777; /* global top bar text color */
+	--webenginecolor36: #ff0000; /* global top bar logout link color */
+	--webenginecolor37: #999999; /* global top bar link color */
+	--webenginecolor38: #ffffff; /* global top bar link color hover */
+	
+	--webenginecolor39: #333333; /* language selection background */
+	--webenginecolor40: #999999; /* language selection link color */
+	--webenginecolor41: #ffffff; /* language selection link hover */
+	
+	--webenginecolor42: rgba(0, 0, 0, 0.3); /* header server info background */
+	--webenginecolor43: rgba(255,255,255,0.1); /* header server info border */
+	--webenginecolor44: #aaaaaa; /* header server info text color */
+	--webenginecolor45: rgba(0,0,0,0.7); /* header server info box shadow */
+	--webenginecolor46: #000000; /* header server info text shadow */
+	--webenginecolor47: #ffffff; /* header server info time text */
+	--webenginecolor48: #cccccc; /* header server info date text */
+	--webenginecolor49: #00ff00; /* header server info online count text */
+	--webenginecolor50: #000000; /* header server info online bar bg */
+	--webenginecolor51: #555555; /* header server info online bar border */
+	--webenginecolor52: #00ff00; /* header server info online progress bar bg */
+	--webenginecolor53: #000000; /* header server info */
+	
+	--webenginecolor54: #333333; /* my account character block bg */
+	--webenginecolor55: rgba(0,0,0,0.5); /* my account character block box shadow */
+	--webenginecolor56: #000000; /* my account character block img box shadow */
+	--webenginecolor57: #000000; /* my account character block location text color */
+	--webenginecolor58: rgba(0,0,0,0.5); /* my account character block level bg */
+	--webenginecolor59: #ffffff; /* my account character block level text color */
+	--webenginecolor60: #000000; /* my account character block name text color */
+	
+	--webenginecolor61: #000000; /* rankings class filter text color */
+	--webenginecolor62: rgba(0,0,0,0.45); /* rankings class filter image box shadow */
+	
+}
+
+html {
+	min-width: 0;
+}
+
+body {
+	background: var(--webenginebg1) url('../img/background.jpg') no-repeat top center;
+	color: var(--webenginecolor2);
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	margin: 0;
+}
+
+@media only screen and (min-width: 2000px) {
+	body {
+		background: var(--webenginebg1) url('../img/background-2600.jpg') no-repeat top center !important;
+	}
+}
+
+a {
+	color: var(--webenginecolor3);
+	text-decoration: none;
+    transition: all .2s ease-in;
+}
+
+a:hover {
+	color: var(--webenginecolor4);
+}
+
+img {
+	border: 0px;
+}
+
+input[type=text], input[type=password], input[type=number] {
+	background: var(--webenginecolor15);
+	border: 1px solid var(--webenginecolor16);
+	color: var(--webenginecolor17);
+}
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus {
+	border: 1px solid var(--webenginecolor18);
+}
+
+#header {
+	width: 100%;
+	margin: 0px auto;
+	padding: 80px 0px 10px 0px;
+	text-align: center;
+}
+
+#container {
+	background: var(--webenginebg2);
+	width: 1040px;
+	height: auto;
+	margin: 0px auto;
+	padding: 20px 0px;
+	border-radius: 5px 5px 0px 0px;
+}
+
+#content {
+	width: 100%;
+	overflow: auto;
+	min-height: 500px;
+	padding: 10px 20px 0px 20px;
+}
+
+.footer {
+	background: var(--webenginebg3);
+	font-family: 'Segoe UI', 'Lucida Sans Unicode', 'Lucida Grande', 'Tahoma', 'Arial', 'sans-serif';
+	width: 1040px;
+	font-size: 12px;
+	color: var(--webenginebg14);
+	padding: 40px;
+	overflow: auto;
+	margin: 0px auto 100px auto;
+	border-radius: 0px 0px 5px 5px;
+}
+	.footer > .footer-container {
+		width: 100%;
+		margin: 0px auto;
+	}
+		.footer > .footer-container a:hover {
+			text-decoration: underline !important;
+		}
+	.footer hr {
+		border-top: 1px solid var(--webenginecolor63);
+	}
+	.footer .footer-social-link {
+		align-items: center;
+		display: inline-flex;
+		filter: grayscale(100%);
+		font-size: 20px;
+		height: 42px;
+		justify-content: center;
+		transition: all .3s ease;
+		width: 42px;
+	}
+	.footer .footer-social-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		justify-content: flex-end;
+	}
+	.footer .footer-social-link:hover {
+		filter: grayscale(0%);
+	}
+
+	/* RESPONSIVE SITE LAYOUT */
+	#container,
+	.footer,
+	.global-top-bar .global-top-bar-content,
+	.header-info-container {
+		width: 1040px;
+		max-width: calc(100% - 24px);
+		box-sizing: border-box;
+	}
+
+	#content {
+		overflow: visible;
+	}
+
+	.site-layout {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.site-main,
+	.site-sidebar {
+		min-width: 0;
+	}
+
+	.site-main > img,
+	.site-main .panel img,
+	.site-sidebar img {
+		max-width: 100%;
+		height: auto;
+	}
+
+	.site-sidebar .panel {
+		margin-bottom: 20px;
+	}
+
+#navbar {
+	width: 100%;
+	backdrop-filter: blur(5px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#navbar ul{
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+
+#navbar ul li {
+	list-style-type: none;
+	display: inline-block;
+	font-size: 16px;
+}
+
+#navbar ul li a {
+	display: inline-block;
+	color: var(--webenginecolor19) !important;
+	text-decoration: none;
+	padding: 20px 30px;
+	transition: all .3s ease;
+	text-transform: uppercase;
+}
+
+#navbar ul li a:active, #navbar ul li a:focus, #navbar ul li a:hover {
+	color: var(--webenginecolor20) !important;
+	text-decoration: none;
+}
+
+.admincp-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	background: #ffffff !important;
+	border: 2px solid #000000 !important;
+	color: #000000 !important;
+	font-weight: bold !important;
+}
+
+.page-title {
+	color: var(--webenginecolor1);
+	font-family: 'PT Sans', sans-serif;
+	font-size: 32px;
+	margin-bottom: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* NEWS MODULE */
+.panel-news {
+	margin-bottom: 30px;
+	color: var(--webenginecolor2);
+	border: 0px;
+	border-radius: 0px;
+	box-shadow: 0 0 0px var(--webenginecolor16);
+}
+.panel-news .panel-heading {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.panel-news .panel-title {
+	color: var(--webenginecolor2);
+	font-size: 24px;
+	font-weight: bold;
+}
+.panel-news .panel-body {
+	padding: 10px;
+}
+.panel-news .panel-footer {
+	border-top: 1px solid var(--webenginecolor21);
+	background: var(--webenginecolor22);
+	font-style: italic;
+	font-size: 11px;
+	height: 40px;
+	color: var(--webenginecolor23);
+}
+
+/* RANKINGS MODULE */
+.rankings-table {
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+
+.rankings-class-image {
+	width: 30px;
+	height: auto;
+	box-shadow: 0 0 5px var(--webenginecolor14);
+	border-radius: 50%;
+}
+.rankings-table tr td {
+	border-bottom: 1px solid var(--webenginecolor16);
+	padding: 10px;
+	font-size: 18px;
+	vertical-align: middle !important;
+	text-align: center;
+}
+.rankings-table-place {
+	color: var(--webenginecolor14);
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+}
+.rankings-table tr:first-child td {
+	color: var(--webenginecolor1);
+	border-bottom: 3px solid var(--webenginecolor1);
+}
+.rankings-update-time {
+	text-align: right;
+	font-size: 11px;
+	color: var(--webenginecolor14);
+	padding: 10px 0px;
+}
+.rankings_menu {
+	width: 100%;
+	overflow: auto;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.rankings_menu span {
+	width: 100%;
+	display: inline-block;
+	padding: 10px 0px;
+	font-size: 24px;
+}
+.rankings_menu a {
+	display: inline-block;
+	width: 150px;
+	border: 1px solid var(--webenginecolor16);
+	text-align: center;
+	padding: 2px 0px;
+	margin: 2px;
+	background: var(--webenginecolor24);
+	border-radius: 2px;
+	color: var(--webenginecolor25);
+}
+.rankings_menu a.active {
+	color: var(--webenginecolor26);
+	border-color: var(--webenginecolor26);
+}
+.rankings_guild_logo tr td {
+	border: 0px !important;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.rankings-gens-img {
+	width: auto !important;
+	height: 30px !important;
+	border: 0 !important;
+	box-shadow: 0 0 0px #000 !important;
+	border-radius: 0px !important;
+}
+
+/* MY ACCOUNT MODULE */
+.myaccount-table {
+	width: 100%;
+	background: var(--webenginecolor27);
+	border: 1px solid var(--webenginecolor16);
+}
+.myaccount-table tr td:first-child {
+	color: var(--webenginecolor14);
+	font-weight: bold;
+}
+.myaccount-table tr td {
+	border-bottom: 1px solid var(--webenginecolor16);
+	padding: 15px !important;
+}
+.myaccount-table tr:last-child td {
+	border: 0px;
+}
+
+/* GENERAL TABLE UI */
+.general-table-ui {
+	width: 100%;
+	table-layout: fixed;
+	background: var(--webenginecolor27);
+	border: 1px solid var(--webenginecolor16);
+	padding: 10px;
+	margin: 10px 0px;
+}
+.general-table-ui tr td {
+	padding: 5px;
+	vertical-align: middle !important;
+}
+.general-table-ui tr:first-child td {
+	color: var(--webenginecolor1);
+}
+.general-table-ui tr:nth-child(2n+2) td {
+	background: var(--webenginecolor28);
+}
+.general-table-ui tr td {
+	text-align: center;
+}
+.general-table-ui img {
+	width: 50px;
+	height: auto;
+	box-shadow: 0 0 5px var(--webenginecolor14);
+	border-radius: 0px;
+}
+
+/* PAYPAL */
+.paypal-gateway-container {
+	width: 100%;
+}
+
+.paypal-gateway-content {
+	background: var(--webenginecolor29);
+	border: 3px solid var(--webenginecolor30);
+	padding: 15px;
+	overflow: auto;
+	border-radius: 5px;
+	font-weight: bold;
+}
+
+.paypal-gateway-logo {
+	width: 100%;
+	height: 100px;
+	background: var(--webenginecolor31) url('../img/paypal-logo-200-68.png') no-repeat center;
+	background-size: contain;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+
+.paypal-gateway-conversion-rate {
+	margin: 0px auto;
+	text-align: center;
+	color: var(--webenginecolor2);
+	font-size: 18px;
+	padding: 10px 0px;
+}
+
+.paypal-gateway-form {
+	width: 100%;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.paypal-gateway-form div {
+	display: inline-block;
+	padding: 0px 10px;
+	color: var(--webenginecolor2);
+	font-size: 24px;
+}
+
+.paypal-gateway-form input[type=text] {
+	width: 60px;
+	font-size: 24px;
+	border: 3px solid var(--webenginecolor32);
+	border-radius: 5px;
+	color: var(--webenginecolor32);
+}
+
+.paypal-gateway-continue {
+	margin: 0px auto;
+	text-align: center;
+}
+
+.paypal-gateway-continue input[type=submit] {
+	background: url('../img/paypal-submit.jpg') no-repeat;
+	width: 200px;
+	height: 40px;
+	border: 0px;
+}
+
+.module-requirements {
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+/* SIDEBAR */
+.panel-sidebar {
+	background: var(--webenginecolor27);
+	border: 0px;
+	border-radius: 0px;
+	box-shadow: 0 0 10px var(--webenginecolor16);
+}
+
+.panel-sidebar > .panel-heading {
+	background: var(--webenginecolor5) !important;
+	color: var(--webenginecolor6) !important;
+	font-family: 'PT Sans', sans-serif;
+	border: 0px;
+	border-radius: 0px;
+	border-bottom: 3px solid var(--webenginecolor7) !important;
+}
+
+.panel-usercp {
+	background: url('../img/usercp_bg.jpg') no-repeat top center;
+	background-size: cover;
+}
+
+.panel-usercp ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.panel-usercp ul li {
+	display: table;
+	width: 100%;
+	vertical-align: middle;
+	line-height: 30px;
+}
+
+.panel-usercp ul li a {
+	color: var(--webenginecolor33) !important;
+	font-weight: bold;
+}
+.panel-usercp ul li a:active, .panel-usercp ul li a:hover {
+	color: var(--webenginecolor1) !important;
+}
+
+.panel-usercp ul li img {
+	position: relative;
+	top: -2px;
+	width: 25px;
+	height: 25px;
+	margin-right: 5px;
+}
+
+.sidebar-banner {
+	margin: 20px 0px;
+	border: 0px;
+}
+
+.sidebar-banner img {
+	box-shadow: 0 0 10px var(--webenginecolor16);
+	border: 0px;
+    border-radius: 5px;
+}
+
+/* GENERAL PANEL STYLING */
+.panel-general {
+	margin-bottom: 30px;
+	background: var(--webenginecolor27);
+	border: 1px solid var(--webenginecolor16);
+	border-radius: 0px;
+	color: var(--webenginecolor2);
+}
+
+.panel-body .panel-title {
+	color: var(--webenginecolor14);
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	border-bottom: 1px solid var(--webenginecolor16);
+	margin-bottom: 20px !important;
+	font-weight: bold;
+}
+
+/* ADD STATS MODULE */
+.panel-addstats {
+	margin-bottom: 30px;
+	background: var(--webenginecolor27);
+	border: 1px solid var(--webenginecolor16);
+	border-radius: 0px;
+	color: var(--webenginecolor2);
+}
+.panel-addstats .character-avatar img {
+	width: 100px;
+	height: auto;
+	box-shadow: 0 0 5px var(--webenginecolor14);
+	border-radius: 0px;
+}
+.panel-addstats .character-name {
+	color: var(--webenginecolor14);
+	font-family: 'PT Sans', sans-serif;
+	font-size: 18px;
+	border-bottom: 1px solid var(--webenginecolor16);
+	padding: 20px 0px;
+	margin-bottom: 20px !important;
+	font-weight: bold;
+}
+
+/* DOWNLOADS */
+.panel-downloads {
+	margin-bottom: 30px;
+	background: var(--webenginecolor27);
+	border: 1px solid var(--webenginecolor16);
+	border-radius: 0px;
+	color: var(--webenginecolor2);
+}
+	.download-description {
+		font-size: 11px;
+		position: relative;
+		top: -7px;
+		color: var(--webenginecolor14);
+	}
+
+.online-status-indicator {
+	margin-left: 5px;
+}
+
+/* WEBENGINE CMS */
+.webengine-powered { color: var(--webenginecolor14) !important; }
+.webengine-powered:active, .webengine-powered:hover { color: #ff3214 !important; }
+
+/* GLOBAL TOP BAR */
+.global-top-bar {
+	width: 100%;
+	background: var(--webenginecolor34);
+	color: var(--webenginecolor35);
+	padding: 7px 0px 2px 0px;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+	.global-top-bar .global-top-bar-content {
+		width: 1040px;
+		margin: 0px auto;
+	}
+		.global-top-bar .global-top-bar-content .row {
+			margin: 0px;
+			padding: 0px;
+		}
+	.global-top-bar a.logout {
+		color: var(--webenginecolor36) !important;
+	}
+	.global-top-bar a {
+		color: var(--webenginecolor37) !important;
+	}
+	.global-top-bar a:hover {
+		color: var(--webenginecolor38) !important;
+	}
+.global-top-bar-nopadding {
+	padding: 0px !important;
+}
+.global-top-bar-separator {
+	padding: 0px 5px;
+}
+
+/* LANGUAGE PICKER */
+.webengine-language-switcher {
+	display: inline-block;
+	list-style: none;
+	padding: 0px !important;
+	margin: 0px !important;
+	width: 46px;
+	height: 19px;
+	overflow: hidden;
+	transition: all .3s ease;
+}
+.webengine-language-switcher:hover {
+	width: 400px;
+}
+	.webengine-language-switcher li {
+		display: inline-block;
+		list-style-type: none;
+		background: var(--webenginecolor39);
+		padding: 0px 5px 2px 5px;
+		border-radius: 3px;
+		transition: all .3s ease;
+	}
+	.webengine-language-switcher li:hover {
+		filter: brightness(120%);
+	}
+	.webengine-language-switcher li a {
+		color: var(--webenginecolor40);
+	}
+	.webengine-language-switcher li a:hover {
+		color: var(--webenginecolor41) !important;
+	}
+
+/* WEBSITE LOGO */
+.webengine-mu-logo {
+	transition: all .3s ease;
+}
+	.webengine-mu-logo:hover {
+		filter: brightness(120%);
+	}
+
+/* HEADER INFO */
+.header-info-container {
+	margin: 0px auto;
+	text-align: right;
+}
+	.header-info-container .header-info {
+		display: inline-block;
+		width: 350px;
+		background: var(--webenginecolor42);
+		backdrop-filter: blur(5px);
+		margin: 0px;
+		padding: 20px;
+		overflow: auto;
+		box-shadow: 0 0 15px var(--webenginecolor45);
+		border-radius: 5px;
+		text-shadow: 1px 1px 3px var(--webenginecolor46);
+		color: var(--webenginecolor44);
+		border: 1px solid var(--webenginecolor43);
+		font-size: 12px;
+	}
+		.header-info-container .header-info .header-info-block {
+			padding: 0px;
+			color: var(--webenginecolor44);
+		}
+		.header-info-container .header-info .header-info-block #tServerTime, .header-info-container .header-info .header-info-block #tLocalTime {
+			color: var(--webenginecolor47);
+		}
+		.header-info-container .header-info .header-info-block #tServerDate, .header-info-container .header-info .header-info-block #tLocalDate {
+			color: var(--webenginecolor48);
+		}
+		.header-info-container .header-info .header-info-block .online-count {
+			color: var(--webenginecolor49);
+		}
+	
+/* ONLINE BAR */
+.webengine-online-bar {
+	width: 100%;
+	background: var(--webenginecolor50);
+	border: 1px solid var(--webenginecolor51);
+	height: 8px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 0px;
+    border-radius: 4px;
+	overflow: hidden;
+	transition: all .3s ease;
+}
+	.webengine-online-bar .webengine-online-bar-progress {
+		height: 8px;
+		background: var(--webenginecolor52) url('../img/online_progress_bar.jpg') no-repeat left center;
+		border-radius: 0px 1px 1px 0px;
+	}
+	.webengine-online-bar:hover {
+		filter: brightness(120%);
+	}
+
+/* MY ACCOUNT CHARACTER LIST */
+.myaccount-character-block {
+	background: var(--webenginecolor54);
+	border: 1px solid var(--webenginecolor14);
+	padding: 5px;
+	border-radius: 3px;
+	display: inline-block;
+	margin: 0px auto;
+	box-shadow: 0 0 10px var(--webenginecolor55);
+}
+	.myaccount-character-block img {
+		width: 100px;
+		height: auto;
+		border-radius: 3px;
+		box-shadow: 0 0 5px var(--webenginecolor56);
+		transition: all 0.3s ease;
+	}
+		.myaccount-character-block img:hover {
+			filter: brightness(120%);
+		}
+.myaccount-character-block-location {
+	font-size: 12px;
+	color: var(--webenginecolor57);
+	margin-bottom: 20px;
+	margin-top: 2px;
+	line-height: 1.2;
+}
+.myaccount-character-block-level {
+	position: relative;
+	top: -77px;
+	display: inline-block;
+	background: var(--webenginecolor58);
+	padding: 0px 5px;
+	border-radius: 3px;
+	color: var(--webenginecolor59);
+	font-size: 10px;
+}
+.myaccount-character-name a {
+	font-weight: bold;
+	color: var(--webenginecolor60);
+	font-size: 16px;
+}
+
+/* RANKINGS FILTER BY CLASS */
+.rankings-class-filter {
+	display: inline-block;
+	list-style-type: none;
+	margin: 20px auto;
+	padding: 10px 20px;
+	border-radius: 10px;
+}
+
+	.rankings-class-filter li {
+		display: inline-block;
+		transition: all 0.3s ease;
+		margin-bottom: 10px;
+	}
+	
+	.rankings-class-filter li:hover {
+		filter: grayscale(0%);
+	}
+
+.rankings-class-filter-selection {
+	display: inline-block;
+	width: 75px;
+	text-align: center;
+	color: var(--webenginecolor61);
+	font-size: 11px;
+	cursor: pointer;
+}
+
+	.rankings-class-filter-selection:hover {
+		color: var(--webenginecolor61) !important;
+	}
+
+	.rankings-class-filter-selection:hover img {
+		filter: brightness(120%);
+	}
+
+.rankings-class-filter-selection img {
+	width: 40px;
+	height: auto;
+	border-radius: 50%;
+	margin-bottom: 5px;
+    transition: all 0.3s ease;
+	box-shadow: 0px 0px 10px 0px var(--webenginecolor62);
+}
+
+.rankings-class-filter-grayscale {
+	filter: grayscale(100%);
+}
+
+/* Home - News List */
+.home-news-block .home-news-block-header h2 {
+	padding: 0px !important;
+	margin: 0px 0px 20px 0px !important;
+	font-style: italic;
+}
+
+.home-news-block .home-news-block-header a {
+	display: inline-block;
+	padding-top: 5px;
+	font-style: italic;
+	font-size: 16px;
+}
+
+.home-news-block-article {
+	margin-top: 10px;
+}
+
+.home-news-block-article .home-news-block-article-type {
+	display: block;
+	border: 1px solid var(--webenginecolor1);
+	padding: 5px;
+	text-align: center;
+	color: var(--webenginecolor1);
+}
+
+.home-news-block-article .home-news-block-article-title-container {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.home-news-block-article .home-news-block-article-title, .home-news-block-article .home-news-block-article-date {
+	line-height: 30px;
+}
+
+/* Event Timer Block */
+.event-schedule-open {
+	color: green;
+}
+
+.event-schedule-inprogress {
+	color: orange;
+}
+
+.panel-sidebar-events .smalltext {
+	font-size: 11px;
+	position: relative;
+	top: -5px;
+}
+
+@media (max-width: 767px) {
+	#container,
+	.footer,
+	.global-top-bar .global-top-bar-content,
+	.header-info-container {
+		width: 100%;
+		max-width: none;
+	}
+
+	#container {
+		padding: 12px 0;
+		border-radius: 0;
+	}
+
+	#content {
+		padding: 8px 12px 0;
+	}
+
+	.site-layout {
+		margin-left: -12px;
+		margin-right: -12px;
+	}
+
+	.site-main,
+	.site-sidebar {
+		float: none;
+		width: 100%;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+
+	#header {
+		padding: 36px 12px 10px;
+	}
+
+	.webengine-mu-logo {
+		max-width: 90%;
+		height: auto;
+	}
+
+	#navbar ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	#navbar ul li {
+		display: block;
+		flex: 1 1 50%;
+		font-size: 14px;
+	}
+
+	#navbar ul li a {
+		display: block;
+		padding: 12px 8px;
+	}
+
+	.header-info {
+		margin: 0 12px;
+		padding: 12px;
+	}
+
+	.footer {
+		padding: 24px 16px;
+		margin-bottom: 24px;
+		border-radius: 0;
+	}
+
+	.footer .footer-container {
+		text-align: center;
+	}
+
+	.table-responsive {
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+}

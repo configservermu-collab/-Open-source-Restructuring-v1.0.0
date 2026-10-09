@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<settings>	
+	<active>1</active>
+	<zen_cost>500000000</zen_cost>
+	<credit_config>0</credit_config>
+	<credit_cost>0</credit_cost>
+	<credit_reward_config>0</credit_reward_config>
+	<credit_reward>0</credit_reward>
+	<required_level>400</required_level>
+	<maximum_resets>10000</maximum_resets>
+	<keep_stats>0</keep_stats>
+	<points_reward>600</points_reward>
+	<multiply_points_by_resets>1</multiply_points_by_resets>
+	<clear_inventory>0</clear_inventory>
+	<revert_class_evolution>0</revert_class_evolution>
+</settings>

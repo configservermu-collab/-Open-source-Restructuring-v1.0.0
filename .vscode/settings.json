@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "?:\\.": true,
+        "$null": true,
+        "Test-Path": true,
+        "Copy-Item": true
+    }
+}

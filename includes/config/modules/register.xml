@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<settings>
+	<active>1</active>
+	<register_enable_recaptcha>0</register_enable_recaptcha>
+	<register_recaptcha_site_key>6LdFptksAAAAAEDHG-jVJmnhMualBUjdP_nr31yy</register_recaptcha_site_key>
+	<register_recaptcha_secret_key>6LdFptksAAAAAIJgsvt2ysEq8Z1z3sIg-bLAv0xQ</register_recaptcha_secret_key>
+	<send_welcome_email>1</send_welcome_email>
+	<verify_email>0</verify_email>
+	<verification_timelimit>24</verification_timelimit>
+	<automatic_login>1</automatic_login>
+</settings>

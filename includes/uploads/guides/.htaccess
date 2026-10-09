@@ -1,0 +1,11 @@
+Options -Indexes
+
+# permitir ver imágenes
+<FilesMatch "\.(jpe?g|png|gif|webp|svg)$">
+    Require all granted
+</FilesMatch>
+
+# bloquear ejecución de scripts
+<FilesMatch "\.(php|phar|pht|phtml)$">
+    Require all denied
+</FilesMatch>

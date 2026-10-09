@@ -1,0 +1,367 @@
+[
+    {
+        "title": "Tipos de cuenta",
+        "type": "table",
+        "rows": [
+            ["AL0", "Free"],
+            ["AL1", "Bronze"],
+            ["AL2", "Plata"],
+            ["AL3", "Gold"]
+        ]
+    },
+    {
+        "title": "Experiencia y Drop",
+        "type": "table",
+        "rows": [
+            ["Experiencia Free", "x400"],
+            ["Experiencia Bronze", "x500"],
+            ["Experiencia Plata", "x600"],
+            ["Experiencia Gold", "x700"],
+            ["Drop Free", "25%"],
+            ["Drop Bronze", "30%"],
+            ["Drop Plata", "35%"],
+            ["Drop Gold", "40%"],
+            ["Tiempo de ítems en el suelo", "30 segundos"],
+            ["Tiempo del Zen en el suelo", "10 segundos"]
+        ]
+    },
+    {
+        "title": "Multiplicador de Zen",
+        "type": "table",
+        "rows": [
+            ["Free", "x2"],
+            ["Bronze", "x5"],
+            ["Plata", "x8"],
+            ["Gold", "x10"]
+        ]
+    },
+    {
+        "title": "Configuración de personajes",
+        "type": "table",
+        "rows": [
+            ["Nivel máximo", "400"],
+            ["Nivel máximo de mascotas", "50"],
+            ["Estadísticas máximas por atributo", "32.767"],
+            ["Creación de Magic Gladiator", "Nivel 220"],
+            ["Creación de Dark Lord", "Nivel 250"],
+            ["Puntos por nivel de Dark Wizard", "5 puntos"],
+            ["Puntos por nivel de Dark Knight", "5 puntos"],
+            ["Puntos por nivel de Fairy Elf", "5 puntos"],
+            ["Puntos por nivel de Magic Gladiator", "7 puntos"],
+            ["Puntos por nivel de Dark Lord", "7 puntos"],
+            ["Punto adicional desde nivel 220", "+1 punto"]
+        ]
+    },
+    {
+        "title": "Experiencia en Party",
+        "type": "table",
+        "rows": [
+            ["Party de 1 integrante", "150%"],
+            ["Party de 2 integrantes", "180%"],
+            ["Party de 3 integrantes", "220%"],
+            ["Party de 4 integrantes", "250%"],
+            ["Party de 5 integrantes", "300%"],
+            ["Diferencia máxima de nivel", "130 niveles"],
+            ["Distribución por daño realizado", "70%"],
+            ["Distribución por nivel", "30%"],
+            ["Distribución automática de Zen", "Desactivada"],
+            ["Daño entre miembros de la Party", "Activado"]
+        ]
+    },
+    {
+        "title": "Mezcla general de ítems",
+        "type": "table",
+        "rows": [
+            ["Free", "50%"],
+            ["Bronze", "55%"],
+            ["Plata", "60%"],
+            ["Gold", "65%"]
+        ]
+    },
+    {
+        "title": "Mezclas de Devil Square",
+        "type": "table",
+        "rows": [
+            ["Niveles incluidos", "Devil Square 1 al 6"],
+            ["Free", "70%"],
+            ["Bronze", "73%"],
+            ["Plata", "76%"],
+            ["Gold", "80%"]
+        ]
+    },
+    {
+        "title": "Mezclas de Blood Castle",
+        "type": "table",
+        "rows": [
+            ["Niveles incluidos", "Blood Castle 1 al 7"],
+            ["Free", "70%"],
+            ["Bronze", "73%"],
+            ["Plata", "76%"],
+            ["Gold", "80%"]
+        ]
+    },
+    {
+        "title": "Mezclas de Illusion Temple",
+        "type": "table",
+        "rows": [
+            ["Niveles incluidos", "Illusion Temple 1 al 5"],
+            ["Free", "70%"],
+            ["Bronze", "73%"],
+            ["Plata", "76%"],
+            ["Gold", "80%"]
+        ]
+    },
+    {
+        "title": "Mejora de ítems sin Luck",
+        "type": "table",
+        "rows": [
+            ["Aclaración", "Los ítems con Luck reciben +20 puntos porcentuales de éxito"],
+            ["Ítem +10 Free", "60%"],
+            ["Ítem +10 Bronze", "63%"],
+            ["Ítem +10 Plata", "66%"],
+            ["Ítem +10 Gold", "70%"],
+            ["Ítem +11 Free", "50%"],
+            ["Ítem +11 Bronze", "53%"],
+            ["Ítem +11 Plata", "56%"],
+            ["Ítem +11 Gold", "60%"],
+            ["Ítem +12 Free", "45%"],
+            ["Ítem +12 Bronze", "46%"],
+            ["Ítem +12 Plata", "47%"],
+            ["Ítem +12 Gold", "50%"],
+            ["Ítem +13 Free", "35%"],
+            ["Ítem +13 Bronze", "37%"],
+            ["Ítem +13 Plata", "39%"],
+            ["Ítem +13 Gold", "41%"]
+        ]
+    },
+    {
+        "title": "Mejora de ítems con Luck",
+        "type": "table",
+        "rows": [
+            ["Ítem +10 Free", "80%"],
+            ["Ítem +10 Bronze", "83%"],
+            ["Ítem +10 Plata", "86%"],
+            ["Ítem +10 Gold", "90%"],
+            ["Ítem +11 Free", "70%"],
+            ["Ítem +11 Bronze", "73%"],
+            ["Ítem +11 Plata", "76%"],
+            ["Ítem +11 Gold", "80%"],
+            ["Ítem +12 Free", "65%"],
+            ["Ítem +12 Bronze", "66%"],
+            ["Ítem +12 Plata", "67%"],
+            ["Ítem +12 Gold", "70%"],
+            ["Ítem +13 Free", "55%"],
+            ["Ítem +13 Bronze", "57%"],
+            ["Ítem +13 Plata", "59%"],
+            ["Ítem +13 Gold", "61%"]
+        ]
+    },
+    {
+        "title": "Creación de Alas Nivel 1",
+        "type": "table",
+        "rows": [
+            ["Free", "75%"],
+            ["Bronze", "80%"],
+            ["Plata", "85%"],
+            ["Gold", "90%"]
+        ]
+    },
+    {
+        "title": "Creación de Alas Nivel 2",
+        "type": "table",
+        "rows": [
+            ["Free", "70%"],
+            ["Bronze", "75%"],
+            ["Plata", "80%"],
+            ["Gold", "85%"]
+        ]
+    },
+    {
+        "title": "Creación de Pluma de Cóndor",
+        "type": "table",
+        "rows": [
+            ["Free", "65%"],
+            ["Bronze", "50%"],
+            ["Plata", "50%"],
+            ["Gold", "65%"],
+            ["Advertencia", "La configuración actual otorga menos porcentaje a Bronze y Plata que a Free"]
+        ]
+    },
+    {
+        "title": "Creación de Alas Nivel 3",
+        "type": "table",
+        "rows": [
+            ["Free", "65%"],
+            ["Bronze", "68%"],
+            ["Plata", "72%"],
+            ["Gold", "75%"]
+        ]
+    },
+    {
+        "title": "Creación de Dinorant",
+        "type": "table",
+        "rows": [
+            ["Free", "75%"],
+            ["Bronze", "80%"],
+            ["Plata", "85%"],
+            ["Gold", "90%"]
+        ]
+    },
+    {
+        "title": "Creación de Frutas",
+        "type": "table",
+        "rows": [
+            ["Free", "70%"],
+            ["Bronze", "78%"],
+            ["Plata", "85%"],
+            ["Gold", "90%"]
+        ]
+    },
+    {
+        "title": "Creación de Mascotas",
+        "type": "table",
+        "rows": [
+            ["Free", "50%"],
+            ["Bronze", "54%"],
+            ["Plata", "56%"],
+            ["Gold", "60%"]
+        ]
+    },
+    {
+        "title": "Creación de Fenrir",
+        "type": "table",
+        "rows": [
+            ["Pieza de Cuerno Free", "40%"],
+            ["Pieza de Cuerno Bronze", "44%"],
+            ["Pieza de Cuerno Plata", "46%"],
+            ["Pieza de Cuerno Gold", "50%"],
+            ["Cuerno Roto Free", "30%"],
+            ["Cuerno Roto Bronze", "35%"],
+            ["Cuerno Roto Plata", "40%"],
+            ["Cuerno Roto Gold", "45%"],
+            ["Cuerno de Fenrir Free", "50%"],
+            ["Cuerno de Fenrir Bronze", "55%"],
+            ["Cuerno de Fenrir Plata", "60%"],
+            ["Cuerno de Fenrir Gold", "65%"],
+            ["Mejora de Fenrir Free", "30%"],
+            ["Mejora de Fenrir Bronze", "35%"],
+            ["Mejora de Fenrir Plata", "40%"],
+            ["Mejora de Fenrir Gold", "45%"]
+        ]
+    },
+    {
+        "title": "Pociones de Escudo",
+        "type": "table",
+        "rows": [
+            ["Poción tipo 1 Free", "50%"],
+            ["Poción tipo 1 Bronze", "50%"],
+            ["Poción tipo 1 Plata", "50%"],
+            ["Poción tipo 1 Gold", "50%"],
+            ["Poción tipo 2 Free", "30%"],
+            ["Poción tipo 2 Bronze", "30%"],
+            ["Poción tipo 2 Plata", "30%"],
+            ["Poción tipo 2 Gold", "30%"],
+            ["Poción tipo 3 Free", "30%"],
+            ["Poción tipo 3 Bronze", "30%"],
+            ["Poción tipo 3 Plata", "30%"],
+            ["Poción tipo 3 Gold", "30%"]
+        ]
+    },
+    {
+        "title": "Jewel of Harmony - Purificación",
+        "type": "table",
+        "rows": [
+            ["Free", "100%"],
+            ["Bronze", "100%"],
+            ["Plata", "100%"],
+            ["Gold", "100%"]
+        ]
+    },
+    {
+        "title": "Jewel of Harmony - Fundición",
+        "type": "table",
+        "rows": [
+            ["Fundición tipo 1 Free", "50%"],
+            ["Fundición tipo 1 Bronze", "53%"],
+            ["Fundición tipo 1 Plata", "57%"],
+            ["Fundición tipo 1 Gold", "60%"],
+            ["Fundición tipo 2 Free", "100%"],
+            ["Fundición tipo 2 Bronze", "100%"],
+            ["Fundición tipo 2 Plata", "100%"],
+            ["Fundición tipo 2 Gold", "100%"]
+        ]
+    },
+    {
+        "title": "Jewel of Harmony - Restauración",
+        "type": "table",
+        "rows": [
+            ["Free", "100%"],
+            ["Bronze", "100%"],
+            ["Plata", "100%"],
+            ["Gold", "100%"]
+        ]
+    },
+    {
+        "title": "Mezcla de Ítems 380",
+        "type": "table",
+        "rows": [
+            ["Mezclas incluidas", "Tipo 1 y Tipo 2"],
+            ["Free", "60%"],
+            ["Bronze", "65%"],
+            ["Plata", "70%"],
+            ["Gold", "75%"]
+        ]
+    },
+    {
+        "title": "Jewel of Soul",
+        "type": "table",
+        "rows": [
+            ["Free", "50%"],
+            ["Bronze", "53%"],
+            ["Plata", "57%"],
+            ["Gold", "60%"]
+        ]
+    },
+    {
+        "title": "Jewel of Life",
+        "type": "table",
+        "rows": [
+            ["Free", "50%"],
+            ["Bronze", "53%"],
+            ["Plata", "57%"],
+            ["Gold", "60%"]
+        ]
+    },
+    {
+        "title": "Jewel of Harmony",
+        "type": "table",
+        "rows": [
+            ["Free", "50%"],
+            ["Bronze", "53%"],
+            ["Plata", "57%"],
+            ["Gold", "60%"]
+        ]
+    },
+    {
+        "title": "Refining Stones",
+        "type": "table",
+        "rows": [
+            ["Lower Refining Stone Free", "40%"],
+            ["Lower Refining Stone Bronze", "40%"],
+            ["Lower Refining Stone Plata", "40%"],
+            ["Lower Refining Stone Gold", "40%"],
+            ["Higher Refining Stone Free", "60%"],
+            ["Higher Refining Stone Bronze", "60%"],
+            ["Higher Refining Stone Plata", "60%"],
+            ["Higher Refining Stone Gold", "60%"]
+        ]
+    },
+    {
+        "title": "Sistema de PC Points",
+        "type": "table",
+        "rows": [
+            ["Estado", "Activado"],
+            ["Máximo de puntos", "500.000"]
+        ]
+    }
+]

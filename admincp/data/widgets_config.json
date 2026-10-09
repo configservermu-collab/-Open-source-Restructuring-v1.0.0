@@ -1,0 +1,38 @@
+{
+    "wanted_widget": {
+        "enabled": true,
+        "title": "WANTED",
+        "min_pk_count": 1,
+        "rank_berserker": 100,
+        "rank_killer": 50,
+        "rank_hunter": 20,
+        "background_color": "#8B0000,#DC143C",
+        "text_color": "#FFD700",
+        "border_color": "rgba(255, 100, 100, 0.4)"
+    },
+    "vicio_widget": {
+        "enabled": true,
+        "title": "EL MÁS VICIO",
+        "criteria": "level",
+        "background_color": "#4B0082,#8A2BE2",
+        "text_color": "#FFD700",
+        "border_color": "rgba(180, 130, 255, 0.35)"
+    },
+    "online_widget": {
+        "enabled": true,
+        "title": "USUARIOS ONLINE",
+        "refresh_interval": 20,
+        "fake_count": 0,
+        "background_color": "#006400,#32CD32",
+        "text_color": "#FFD700",
+        "border_color": "rgba(255, 221, 162, 0.25)",
+        "variant": "badge"
+    },
+    "general": {
+        "enabled": true,
+        "show_class_images": false,
+        "show_status": true,
+        "widget_effects": true,
+        "position": "hero"
+    }
+}

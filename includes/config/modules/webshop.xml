@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<settings>
+    <active>1</active>
+    <mu_version>ex101kor</mu_version>
+    <credit_config_id>1</credit_config_id>
+    <moneda>PcPoint</moneda>
+    <moneda_v>WcoinC</moneda_v>
+    <days_gc>20</days_gc>
+    <text_gc>9</text_gc>
+    <item_maxlevel>13</item_maxlevel>
+    <enable_itemlevel>1</enable_itemlevel>
+    <enable_oplife>1</enable_oplife>
+    <enable_luck>1</enable_luck>
+    <enable_skill>1</enable_skill>
+    <enable_opexe>1</enable_opexe>
+    <enable_op380>0</enable_op380>
+    <enable_ancient>0</enable_ancient>
+    <enable_harmony>0</enable_harmony>
+    <enable_socket>0</enable_socket>
+    <option_itemlevel>20</option_itemlevel>
+    <option_life>10</option_life>
+    <option_luck>20</option_luck>
+    <option_skill>70</option_skill>
+    <option_exe>50</option_exe>
+    <option_380>100</option_380>
+    <option_ancient>300</option_ancient>
+    <option_socket>500</option_socket>
+    <option_harmony>600</option_harmony>
+    <sword>1</sword>
+    <axe>1</axe>
+    <mace>1</mace>
+    <spear>1</spear>
+    <bow>1</bow>
+    <staff>1</staff>
+    <shield>1</shield>
+    <helm>1</helm>
+    <armor>1</armor>
+    <pants>1</pants>
+    <gloves>1</gloves>
+    <boots>1</boots>
+    <wings>1</wings>
+    <otros>1</otros>
+    <item_maxopexe>2</item_maxopexe>
+    <enable_samesocket>0</enable_samesocket>
+    <type_vault>0</type_vault>
+</settings>

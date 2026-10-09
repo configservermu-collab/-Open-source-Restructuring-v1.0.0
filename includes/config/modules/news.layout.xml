@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+	<news_layout>expandida</news_layout>
+	<news_bgcolor>#000000</news_bgcolor>
+	<news_top>0</news_top>
+	<news_left>0</news_left>
+	<news_width>550</news_width>
+	<news_height>0</news_height>
+</settings>

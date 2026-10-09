@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<settings>
+	<active>1</active>
+	<subject_min_limit>10</subject_min_limit>
+	<message_min_limit>10</message_min_limit>
+	<message_max_limit>5000</message_max_limit>
+	<staff_nick>Staff</staff_nick>
+	<reply_character_id_min>32</reply_character_id_min>
+	<reply_character_id_max>32</reply_character_id_max>
+	<reply_character_id_column>Class</reply_character_id_column>
+	<staff_userids>0</staff_userids>
+	<staff_usernames>Config</staff_usernames>
+</settings>

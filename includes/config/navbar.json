@@ -1,0 +1,56 @@
+[
+    {
+        "active": true,
+        "type": "internal",
+        "phrase": "menu_txt_1",
+        "link": "",
+        "visibility": "always",
+        "newtab": false,
+        "order": 10
+    },
+    {
+        "active": true,
+        "type": "internal",
+        "phrase": "menu_txt_11",
+        "link": "info",
+        "visibility": "always",
+        "newtab": false,
+        "order": 20
+    },
+    {
+        "active": true,
+        "type": "internal",
+        "phrase": "menu_txt_7",
+        "link": "downloads",
+        "visibility": "always",
+        "newtab": false,
+        "order": 30
+    },
+    {
+        "active": true,
+        "type": "internal",
+        "phrase": "menu_txt_8",
+        "link": "donation",
+        "visibility": "always",
+        "newtab": false,
+        "order": 40
+    },
+    {
+        "active": true,
+        "type": "internal",
+        "phrase": "menu_txt_10",
+        "link": "rankings",
+        "visibility": "always",
+        "newtab": false,
+        "order": 50
+    },
+    {
+        "active": true,
+        "type": "internal",
+        "phrase": "menu_txt_12",
+        "link": "guides",
+        "visibility": "always",
+        "newtab": false,
+        "order": 60
+    }
+]

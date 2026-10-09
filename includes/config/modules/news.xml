@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<settings>
+	<active>1</active>
+	<news_expanded>5</news_expanded>
+	<news_list_limit>20</news_list_limit>
+	<news_short>0</news_short>
+	<news_short_char_limit>100</news_short_char_limit>
+</settings>

@@ -1,0 +1,23 @@
+
+/****** Object:  Table [dbo].[WEBENGINE_VOTE_SITES]    Script Date: 29/07/2025 19:39:15 ******/
+SET ANSI_NULLS OFF
+
+SET QUOTED_IDENTIFIER ON
+
+SET ANSI_PADDING OFF
+
+CREATE TABLE [dbo].[WEBENGINE_VOTE_SITES](
+	[votesite_id] [int] IDENTITY(1,1) NOT NULL,
+	[votesite_title] [varchar](50) NOT NULL,
+	[votesite_link] [varchar](max) NOT NULL,
+	[votesite_reward] [int] NOT NULL,
+	[votesite_time] [int] NOT NULL,
+ CONSTRAINT [PK_WEBENGINE_VOTE_SITES] PRIMARY KEY CLUSTERED 
+(
+	[votesite_id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+
+SET ANSI_PADDING OFF
+

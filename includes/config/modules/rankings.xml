@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<settings>
+	<active>1</active>
+	<rankings_results>100</rankings_results>
+	<rankings_show_date>1</rankings_show_date>
+	<rankings_show_default>general</rankings_show_default>
+	<rankings_show_place_number>1</rankings_show_place_number>
+	<rankings_enable_level>1</rankings_enable_level>
+	<rankings_enable_resets>1</rankings_enable_resets>
+	<rankings_enable_pk>1</rankings_enable_pk>
+	<rankings_enable_gr>0</rankings_enable_gr>
+	<rankings_enable_online>1</rankings_enable_online>
+	<rankings_enable_guilds>0</rankings_enable_guilds>
+	<rankings_enable_master>1</rankings_enable_master>
+	<rankings_enable_gens>1</rankings_enable_gens>
+	<rankings_excluded_characters/>
+	<combine_level_masterlevel>0</combine_level_masterlevel>
+	<show_country_flags>1</show_country_flags>
+	<show_location>0</show_location>
+	<show_online_status>1</show_online_status>
+	<guild_score_formula>1</guild_score_formula>
+	<guild_score_multiplier>0</guild_score_multiplier>
+	<rankings_excluded_guilds>1</rankings_excluded_guilds>
+	<rankings_class_filter>0</rankings_class_filter>
+	<rankings_enable_general>1</rankings_enable_general>
+	<show_general_gens>0</show_general_gens>
+	<show_general_resets>1</show_general_resets>
+	<show_general_level>1</show_general_level>
+	<show_general_masterlevel>0</show_general_masterlevel>
+	<show_general_guild>1</show_general_guild>
+	<rankings_enable_bloodcastle>1</rankings_enable_bloodcastle>
+	<rankings_enable_chaoscastle>1</rankings_enable_chaoscastle>
+	<rankings_enable_devilsquare>1</rankings_enable_devilsquare>
+	<rankings_enable_duelos>1</rankings_enable_duelos>
+	<rankings_enable_it>1</rankings_enable_it>
+	<show_profile_level>1</show_profile_level>
+	<show_profile_master>0</show_profile_master>
+	<show_profile_resets>1</show_profile_resets>
+	<show_profile_gr>0</show_profile_gr>
+	<show_profile_stats>0</show_profile_stats>
+	<show_profile_cmd>0</show_profile_cmd>
+	<show_profile_kills>0</show_profile_kills>
+	<show_profile_guild>1</show_profile_guild>
+	<show_profile_status>1</show_profile_status>
+</settings>

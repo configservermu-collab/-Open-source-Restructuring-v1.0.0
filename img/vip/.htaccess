@@ -1,0 +1,22 @@
+# VIP Images Folder Protection
+# Allow access to image files only
+
+<Files *>
+    Order Deny,Allow
+    Deny from all
+</Files>
+
+# Allow image formats
+<FilesMatch "\.(png|jpg|jpeg|gif|webp|svg|ico)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect this htaccess file
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>

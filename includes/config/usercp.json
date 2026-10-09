@@ -1,0 +1,132 @@
+[
+    {
+        "active": true,
+        "type": "internal",
+        "phrase": "usercp_menu_txt_1",
+        "link": "usercp\/myaccount",
+        "icon": "extra_icon_02.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 10
+    },
+    {
+        "active": false,
+        "type": "internal",
+        "phrase": "usercp_menu_txt_2",
+        "link": "usercp\/reset",
+        "icon": "reset.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 20
+    },
+    {
+        "active": false,
+        "type": "internal",
+        "phrase": "usercp_menu_txt_6",
+        "link": "usercp\/unstick",
+        "icon": "extra_icon_07.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 30
+    },
+    {
+        "active": true,
+        "type": "internal",
+        "phrase": "usercp_menu_txt_3",
+        "link": "usercp\/clearpk",
+        "icon": "extra_icon_13.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 40
+    },
+    {
+        "active": false,
+        "type": "internal",
+        "phrase": "usercp_menu_txt_8",
+        "link": "usercp\/resetstats",
+        "icon": "fixstats.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 50
+    },
+    {
+        "active": true,
+        "type": "internal",
+        "phrase": "usercp_menu_txt_10",
+        "link": "usercp\/addstats",
+        "icon": "extra_icon_14.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 60
+    },
+    {
+        "active": false,
+        "type": "internal",
+        "phrase": "usercp_menu_txt_9",
+        "link": "usercp\/clearskilltree",
+        "icon": "clearst.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 70
+    },
+    {
+        "active": false,
+        "type": "internal",
+        "phrase": "usercp_menu_txt_4",
+        "link": "usercp\/vote",
+        "icon": "extra_icon_17.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 80
+    },
+    {
+        "active": true,
+        "type": "internal",
+        "phrase": "usercp_menu_txt_5",
+        "link": "donation",
+        "icon": "extra_icon_10.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 90
+    },
+    {
+        "active": false,
+        "type": "internal",
+        "phrase": "plugin_ticketsupport_1",
+        "link": "tickets\/new",
+        "icon": "extra_icon_05.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 999
+    },
+    {
+        "active": false,
+        "type": "internal",
+        "phrase": "plugin_ticketsupport_2",
+        "link": "tickets\/list",
+        "icon": "usercp_default.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 999
+    },
+    {
+        "active": false,
+        "type": "internal",
+        "phrase": "plugin_ticketsupport_staff",
+        "link": "tickets\/staff",
+        "icon": "usercp_default.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 999
+    },
+    {
+        "active": true,
+        "type": "internal",
+        "phrase": "vip_title",
+        "link": "vip\/info",
+        "icon": "extra_icon_18.png",
+        "visibility": "user",
+        "newtab": false,
+        "order": 999
+    }
+]

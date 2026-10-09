@@ -1,0 +1,13 @@
+# Protección de archivos JSON
+# Denegar acceso directo desde navegador
+
+<Files "*.json">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Permitir solo acceso desde PHP
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^.*$ - [F,L]
+</IfModule>

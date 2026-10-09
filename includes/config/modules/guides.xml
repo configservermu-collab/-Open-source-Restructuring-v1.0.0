@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<settings>
+	<active>1</active>
+	<guides_expanded>1</guides_expanded>
+	<guides_list_limit>50</guides_list_limit>
+	<guides_short>1</guides_short>
+	<guides_short_char_limit>1000</guides_short_char_limit>
+	<guide_background>#2a2a2a</guide_background>
+</settings>
