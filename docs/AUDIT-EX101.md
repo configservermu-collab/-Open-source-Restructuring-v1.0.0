@@ -4,23 +4,6 @@ Fecha: 2026-09-14
 
 ## Alcance
 
-Cliente analizado:
-
-```text
-D:\Trabajo\CRFMU\CrfMU Classic\main.exe
-```
-
-Plugin:
-
-```text
-D:\Trabajo\CRFMU\CrfMU Classic\AutoCtrl.dll
-```
-
-Source de referencia:
-
-```text
-D:\Plugin\Wizard Team Source\SOURCE\Source\EX101KOR
-```
 
 No se modifico `AutoCtrl.cpp` ni se aplicaron nuevos parches durante esta auditoria.
 
