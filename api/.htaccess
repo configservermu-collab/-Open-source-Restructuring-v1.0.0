@@ -1,0 +1,4 @@
+RewriteEngine off
+<FilesMatch "\.(log|ini|json)$">
+	Deny from all
+</FilesMatch>
