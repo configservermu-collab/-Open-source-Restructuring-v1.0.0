@@ -1,0 +1,26 @@
+<?php
+/**
+ * WebEngine CMS
+ * https://webenginecms.org/
+ * 
+ * @version 1.2.6
+ * @author Lautaro Angelico <http://lautaroangelico.com/>
+ * @copyright (c) 2013-2026 Lautaro Angelico, All Rights Reserved
+ * @modified-by ConfigServerMU <https://configservermu.net/>
+ * @copyright (c) 2026 ConfigServerMU, All Rights Reserved
+ * 
+ * Licensed under the MIT license
+ * http://opensource.org/licenses/MIT
+ */
+
+try {
+	if(!config('language_switch_active',true)) throw new Exception(lang('error_62'));
+	if(!isset($_GET['to'])) throw new Exception(lang('error_63'));
+	if(strlen($_GET['to']) != 2) throw new Exception(lang('error_63'));
+	if(!Validator::Alpha($_GET['to'])) throw new Exception(lang('error_63'));
+	if(!$handler->switchLanguage($_GET['to'])) throw new Exception(lang('error_65'));
+	redirect();
+} catch (Exception $ex) {
+	if(!config('error_reporting',true)) redirect();
+	message('error', $ex->getMessage());
+}
