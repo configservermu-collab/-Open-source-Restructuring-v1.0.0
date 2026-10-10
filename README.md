@@ -49,6 +49,37 @@ server's filesystem and log-retention policy before enabling diagnostics.
 - `modules/` — public and account modules
 - `templates/` — presentation templates
 
+## Módulos incluidos
+
+Esta distribución incluye los siguientes módulos funcionales para una comunidad
+de MU Online:
+
+- **Información y contenido:** página de información del servidor (`info`),
+  noticias, contacto, descargas, privacidad, reembolsos y términos de servicio.
+- **Guías:** consulta pública de guías y administración de guías y sus
+  traducciones desde el AdminCP.
+- **Cuentas y perfiles:** registro, inicio y cierre de sesión, recuperación de
+  contraseña, cuentas múltiples, perfil de jugador, perfil de guild y
+  configuración de la cuenta.
+- **Rankings:** rankings general, level, resets, killers/PK, guilds, grand
+  resets, online, gens, master, Blood Castle, Devil Square, Chaos Castle,
+  duelos e Illusion Temple.
+- **Donaciones y pagos:** Mercado Pago, PayPal y transferencia bancaria, con
+  historial de operaciones y configuración independiente para cada proveedor.
+- **Sistemas del juego:** Castle Siege, intercambio de resets, compra de Zen,
+  códigos de regalo, sistema VIP, referidos, tickets y jugadores online.
+- **AdminCP:** panel de administración de cuentas, personajes, bloqueos,
+  registros de pagos, configuración del sitio, editor de información,
+  administración de guías, selector de templates, widgets y gestión de
+  módulos.
+- **Diseño y presentación:** template `default`, navegación, información del
+  servidor, tarjetas informativas, rankings, redes sociales y herramientas de
+  personalización del diseño desde el AdminCP.
+
+Los módulos de pago requieren configuración del proveedor y credenciales
+propias del despliegue. No se incluyen credenciales ni datos privados en este
+repositorio.
+
 ## Aporte de ConfigServerMU
 
 Esta copia incluye un aporte propio de ConfigServerMU, desarrollado y mantenido
