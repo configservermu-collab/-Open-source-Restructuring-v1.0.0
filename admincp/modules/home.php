@@ -157,6 +157,20 @@ try {
 .admincp-home .table-recent > thead > tr > th {color:#00d9ff;background:#162330;border-color:#294358;}
 .admincp-home .table-recent > tbody > tr > td {color:#e9eef2;background:#131f2a;border-color:#294358;vertical-align:middle;}
 .admincp-home .table-recent > tbody > tr:hover > td {background:#213b4b;}
+.admincp-home .admincp-footer {
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ gap:18px;
+ margin:28px 0 8px;
+ padding:16px 12px 4px;
+ border-top:1px solid rgba(126,184,220,.2);
+ color:#aeb9c4;
+ font-size:13px;
+}
+.admincp-home .admincp-footer a {color:#1683d8;text-decoration:none;transition:color .2s ease;}
+.admincp-home .admincp-footer a:hover,.admincp-home .admincp-footer a:focus {color:#00d9ff;text-decoration:underline;}
+.admincp-home .admincp-footer i {margin-right:4px;}
 @media (max-width:1199px) {
  .admincp-home .stat-grid-main {grid-template-columns:repeat(2,minmax(0,1fr));}
  .admincp-home .stat-grid-vip {grid-template-columns:repeat(3,minmax(0,1fr));}
@@ -183,7 +197,6 @@ try {
         </div>
     </div>
 </div>
-
 <!-- Main Statistics: four equal cards -->
 <div class="stat-grid stat-grid-main">
     <div class="stat-item">
@@ -214,7 +227,7 @@ try {
             <div class="stat-label">Total Baneados</div>
         </div>
     </div>
-</div>
+    </div>
 
 <!-- VIP Statistics: five equal cards -->
 <div class="stat-grid stat-grid-vip">
@@ -253,7 +266,7 @@ try {
             <div class="stat-label">Platinum VIP</div>
         </div>
     </div>
-</div>
+    </div>
 
 <!-- Donations and Recent Registrations -->
 <div class="row">
@@ -278,7 +291,7 @@ try {
             <div class="donation-card donation-paypal">
                 <div class="row">
                     <div class="col-xs-3">
-                        <i class="fa fa-paypal" style="font-size: 32px;"></i>
+                        <i class="fa-brands fa-paypal" style="font-size: 32px;"></i>
                     </div>
                     <div class="col-xs-9 text-right">
                         <div style="font-size: 24px; font-weight: bold;">$<?php echo number_format($paypalTotal, 2); ?> USD</div>
@@ -458,4 +471,9 @@ try {
         </div>
     </div>
 </div>
+<footer class="admincp-footer">
+    <a href="https://configservermu.net" target="_blank" rel="noopener noreferrer">configservermu.net</a>
+    <span aria-hidden="true">•</span>
+    <a href="https://www.instagram.com/configservermu/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a>
+</footer>
 </div>
