@@ -75,7 +75,7 @@ $admincpSidebar = array(
 		"latestpaypal" => "PayPal Donations",
 		"latestmercadopago" => "Mercadopago Donations",
 		"topvotes" => "Top Voters",
-	), "fa-money"),
+	), "fa-money-bill-wave"),
 	array("Website Configuration", array(
 		"admincp_access" => "AdminCP Access",
 		"connection_settings" => "Connection Settings",
@@ -129,6 +129,7 @@ $admincpSidebar = array(
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand ui-shared-element" href="<?php echo admincp_base(); ?>"><img class="ui-magnify" src="https://i.imgur.com/2SRHsS1.png" alt="ConfigServerMU" /></a>
+                <a class="admin-brand-label" href="https://github.com/configservermu-collab/-Open-source-Restructuring-v1.0.0" target="_blank" rel="noopener noreferrer">-Open-source-Restructuring-v1.0.0</a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
