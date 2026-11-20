@@ -4,14 +4,18 @@
  * Lee el cache de WebEngine y genera JSON
  */
 
-// Incluir funciones de WebEngine
-require_once '../includes/functions.php';
+define('access', 'api');
 
 header('Content-Type: application/json; charset=utf-8');
 header('Access-Control-Allow-Origin: *');
 header('Cache-Control: no-cache, must-revalidate');
 
 try {
+    // Load WebEngine to initialize cache paths and shared functions.
+    if(!@include_once(rtrim(str_replace('\\', '/', dirname(__DIR__)), '/') . '/includes/webengine.php')) {
+        throw new Exception('No se pudo cargar WebEngine');
+    }
+
     // Usar la función LoadCacheData de WebEngine
     $ranking_data = LoadCacheData('rankings_general.cache');
     
@@ -24,6 +28,7 @@ try {
     // Tomar top 10
     $count = 0;
     foreach ($ranking_data as $rdata) {
+        if (!is_array($rdata) || count($rdata) < 4) continue;
         if ($count >= 10) break;
         
         $topResets[] = [
