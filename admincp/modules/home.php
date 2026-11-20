@@ -339,7 +339,7 @@ try {
                             $date = date('d/m/Y', strtotime($reg['appl_days'] ?? 'now'));
                             
                             echo '<tr>';
-                            echo '<td><img src="'.__PATH_COUNTRY_FLAGS__.$country.'.gif" width="20" alt="'.$country.'"></td>';
+                            echo '<td><img src="'.htmlspecialchars(getCountryFlag($country), ENT_QUOTES, 'UTF-8').'" width="20" alt="'.htmlspecialchars($country, ENT_QUOTES, 'UTF-8').'"></td>';
                             echo '<td>'.$username.'</td>';
                             echo '<td>'.$date.'</td>';
                             echo '<td>'.$status.'</td>';
