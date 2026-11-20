@@ -111,6 +111,15 @@ corresponden a Bruno Neira.
   Facebook, Instagram, Discord, YouTube, Twitter / X, TikTok y WhatsApp.
   Cada enlace se muestra en el template default solo cuando tiene una URL
   configurada; los campos vacíos permanecen ocultos.
+- Actualización del inicio del template AtlansLostLegacy para mostrar Top
+  Resets desde caché, eventos conectados con `api/events.php`, información del
+  servidor y enlaces sociales configurables.
+- Incorporación de enlaces de redes sociales y atribución del proyecto en el
+  footer, además de carga remota de banderas de países mediante códigos ISO.
+- Actualización de Mi Cuenta para mostrar los días restantes de VIP y los
+  saldos de las configuraciones de créditos habilitadas para mostrarse allí.
+  Los saldos asociados a personajes se consultan por cada personaje de la
+  cuenta.
 - Aclaración en el AdminCP sobre el comportamiento de los campos sociales y
   validación de sus URLs antes de guardar la configuración.
 - Conservación de la estructura procedural existente de WebEngine, de sus
@@ -229,14 +238,3 @@ for the full license text.
 Bug reports and pull requests are welcome. Please avoid including credentials,
 personal data, private server addresses, database dumps, or other deployment
 secrets in issues and proposed changes.
-
-## Cambios recientes
-
-- Se reemplazó el bloque **Top Guilds** del inicio por **Top Resets**. Muestra personaje, cantidad de resets y nivel desde la caché `rankings_resets.cache`.
-- Se habilitó la creación de cachés de rankings que aún no existen y se actualizaron las rutas escribibles.
-- El panel de eventos del inicio ahora obtiene los horarios y la cuenta regresiva desde `api/events.php`, con horario de Argentina (UTC-3).
-- El endpoint de rankings inicializa WebEngine y omite la fila de fecha del caché al generar el JSON.
-
-### Actualización de datos
-
-El ranking de resets se actualiza mediante el cron de rankings. El panel de eventos consulta `api/events.php` desde el navegador.
