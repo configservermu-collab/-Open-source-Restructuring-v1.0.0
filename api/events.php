@@ -5,9 +5,7 @@
  * 
  * @version 1.2.0
  * @author Lautaro Angelico <http://lautaroangelico.com/>
- * @copyright (c) 2013-2026 Lautaro Angelico, All Rights Reserved
- * @modified-by ConfigServerMU <https://configservermu.net/>
- * @copyright (c) 2026 ConfigServerMU, All Rights Reserved
+ * @copyright (c) 2013-2019 Lautaro Angelico, All Rights Reserved
  * 
  * Licensed under the MIT license
  * http://opensource.org/licenses/MIT
@@ -15,7 +13,7 @@
 
 // PHP Timezone
 // http://php.net/manual/en/timezones.php
-date_default_timezone_set('UTC');
+date_default_timezone_set('America/Argentina/Buenos_Aires');
 
 $eventTimes = array(
 	'bloodcastle' => array(
@@ -94,8 +92,7 @@ function getEventNextTime($eventSchedule) {
 			return date("Y-m-d ") . $time;
 		}
 	}
-	$tomorrow = date('d', strtotime('tomorrow'));
-	return date("Y-m-$tomorrow ") . $eventSchedule[0];
+	return date('Y-m-d ', strtotime('tomorrow')) . $eventSchedule[0];
 }
 
 function getEventPreviousTime($eventSchedule) {
@@ -104,8 +101,7 @@ function getEventPreviousTime($eventSchedule) {
 		if($time > $currentTime) {
 			$last = $key-1;
 			if($last < 0) {
-				$yesterday = date('d', strtotime('yesterday'));
-				return date("Y-m-$yesterday ") . end($eventSchedule);
+				return date('Y-m-d ', strtotime('yesterday')) . end($eventSchedule);
 			}
 			return date("Y-m-d ") . $eventSchedule[$last];
 			return;
