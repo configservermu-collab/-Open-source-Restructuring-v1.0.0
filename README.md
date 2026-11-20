@@ -229,3 +229,14 @@ for the full license text.
 Bug reports and pull requests are welcome. Please avoid including credentials,
 personal data, private server addresses, database dumps, or other deployment
 secrets in issues and proposed changes.
+
+## Cambios recientes
+
+- Se reemplazó el bloque **Top Guilds** del inicio por **Top Resets**. Muestra personaje, cantidad de resets y nivel desde la caché `rankings_resets.cache`.
+- Se habilitó la creación de cachés de rankings que aún no existen y se actualizaron las rutas escribibles.
+- El panel de eventos del inicio ahora obtiene los horarios y la cuenta regresiva desde `api/events.php`, con horario de Argentina (UTC-3).
+- El endpoint de rankings inicializa WebEngine y omite la fila de fecha del caché al generar el JSON.
+
+### Actualización de datos
+
+El ranking de resets se actualiza mediante el cron de rankings. El panel de eventos consulta `api/events.php` desde el navegador.
