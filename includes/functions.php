@@ -201,14 +201,13 @@ function BuildCacheData($data_array) {
 
 function UpdateCache($file_name, $data) {
 	$file = __PATH_CACHE__.$file_name;
-	if(!file_exists($file)) return;
-	if(!is_writable($file)) return;
-	
-	$fp = fopen($file, 'w');
-	fwrite($fp, time()."\n");
-	fwrite($fp, $data);
-	fclose($fp);
-	return true;
+	if(file_exists($file)) {
+		if(!is_writable($file)) return false;
+	} elseif(!is_writable(dirname($file))) {
+		return false;
+	}
+
+	return file_put_contents($file, time()."\n".$data, LOCK_EX) !== false;
 }
 
 function LoadCacheData($file_name) {
