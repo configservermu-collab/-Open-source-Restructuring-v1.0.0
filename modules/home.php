@@ -132,40 +132,41 @@
 
 	<div class="col-xs-4">
 		<?php
-		// Top Guilds
-		$guildRankingData = LoadCacheData('rankings_guilds.cache');
-		$topGuildLimit = 10;
-		if(is_array($guildRankingData)) {
-			$rankingsConfig = loadConfigurations('rankings');
-			$topGuild = array_slice($guildRankingData, 0, $topGuildLimit+1);
-			echo '<div class="panel panel-sidebar">';
-				echo '<div class="panel-heading">';
-					echo '<h3 class="panel-title">'.lang('rankings_txt_4').'<a href="'.__BASE_URL__.'rankings/guilds" class="btn btn-primary btn-xs pull-right" style="text-align:center;width:22px;">+</a></h3>';
-				echo '</div>';
-				echo '<div class="panel-body" style="min-height:400px;">';
+		// Top Resets
+		$resetsRankingData = LoadCacheData('rankings_resets.cache');
+		$topResets = array();
+		if(is_array($resetsRankingData)) {
+			foreach($resetsRankingData as $row) {
+				if(!is_array($row) || count($row) < 3) continue;
+				$topResets[] = $row;
+				if(count($topResets) >= 10) break;
+			}
+		}
+		echo '<div class="panel panel-sidebar">';
+			echo '<div class="panel-heading">';
+				echo '<h3 class="panel-title">Top Resets<a href="'.__BASE_URL__.'rankings/resets" class="btn btn-primary btn-xs pull-right" style="text-align:center;width:22px;">+</a></h3>';
+			echo '</div>';
+			echo '<div class="panel-body" style="min-height:400px;">';
+				if(!empty($topResets)) {
 					echo '<table class="table table-condensed">';
-						echo '<thead>';
+						echo '<thead><tr>';
+							echo '<th class="text-center">Personaje</th>';
+							echo '<th class="text-center">Resets</th>';
+							echo '<th class="text-center">Nivel</th>';
+						echo '</tr></thead><tbody>';
+						foreach($topResets as $row) {
 							echo '<tr>';
-								echo '<th class="text-center">'.lang('rankings_txt_17').'</th>'; // Guild Name
-								echo '<th class="text-center">'.lang('rankings_txt_28').'</th>'; // Logo
-								echo '<th class="text-center">'.lang('rankings_txt_19').'</th>'; // Score
-							echo '</tr>';
-						echo '</thead>';
-						echo '<tbody>';
-						foreach($topGuild as $key => $row) {
-							if($key == 0) continue;
-							$multiplier = $rankingsConfig['guild_score_formula'] == 1 ? 1 : $rankingsConfig['guild_score_multiplier'];
-							echo '<tr>';
-								echo '<td class="text-center">'.guildProfile($row[0]).'</td>';
-								echo '<td class="text-center">'.returnGuildLogo($row[3], 20).'</td>';
-								echo '<td class="text-center">'.number_format(floor($row[2]*$multiplier)).'</td>';
+								echo '<td class="text-center">'.playerProfile($row[0]).'</td>';
+								echo '<td class="text-center">'.number_format((int)$row[2]).'</td>';
+								echo '<td class="text-center">'.number_format((int)(isset($row[3]) ? $row[3] : 0)).'</td>';
 							echo '</tr>';
 						}
-					echo '</tbody>';
-					echo '</table>';
-				echo '</div>';
+					echo '</tbody></table>';
+				} else {
+					echo '<p class="text-center">No hay datos de resets disponibles.</p>';
+				}
 			echo '</div>';
-		}
+		echo '</div>';
 		?>
 	</div>
 	<div class="col-xs-4">
