@@ -523,8 +523,16 @@ function getCountryCodeFromIp($ip) {
 }
 
 function getCountryFlag($countryCode='default') {
-	if(!check_value($countryCode)) $countryCode = 'default';
-	return __PATH_COUNTRY_FLAGS__ . strtolower($countryCode) . '.gif';
+	if(!is_string($countryCode) && !is_numeric($countryCode)) {
+		return 'https://api.iconify.design/mdi/earth.svg?color=%238ca7c2';
+	}
+
+	$countryCode = strtolower(trim((string)$countryCode));
+	if(!preg_match('/^[a-z]{2}$/', $countryCode)) {
+		return 'https://api.iconify.design/mdi/earth.svg?color=%238ca7c2';
+	}
+
+	return 'https://flagcdn.com/w20/'.$countryCode.'.png';
 }
 
 function returnMapName($id=0) {
